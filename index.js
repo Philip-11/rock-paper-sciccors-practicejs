@@ -24,27 +24,28 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     let humanChoice;
+    let answer;
 
-    while (humanChoice !== "Rock" || "Scissors" || "Paper")
+    while (answer !== "rock" || "scissors" || "paper")
     {
-        humanChoice = prompt("What is your pick? (Rock, Scissors, Paper)");
-
-        if (humanChoice == "Rock")
+        humanChoice  = prompt("What is your pick? Rock, Paper, Scissors");
+        answer = humanChoice.toLowerCase()
+        if (answer == "rock")   
         {
-            return "Rock";
+            return "Rock"
         }
 
-        if (humanChoice == "Scissors")
+        if (answer == "scissors")
         {
-            return "Scissors";
+            return "Scissors"
         }
 
-        if (humanChoice == "Paper")
+        if (answer == "paper")
         {
-            return "Paper";
+            return "Paper"
         }
-
         
-    }   
+    }
 }
 
+console.log(getHumanChoice())
