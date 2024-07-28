@@ -116,7 +116,26 @@ function playRound(getHumanChoice, getComputerChoice)
 
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+function playGame()
+{
+    while (humanScore !== 5 || computerScore !== 5)
+    {
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection);
+
+        if (humanScore == 5)
+        {
+            return "Human Wins, Current score is " + "Human: " + humanScore + " Computer: " + computerScore
+        }
+
+        if (computerScore == 5)
+        {
+            return "Computer wins, Current score is " + "Human: " + humanScore + " Computer: " + computerScore
+        }
+    }
+}
+
+//Play Game
+console.log(playGame())
