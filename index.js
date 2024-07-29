@@ -53,65 +53,65 @@ function playRound(getHumanChoice, getComputerChoice)
     //Paper
     if (getHumanChoice == "Paper" && getComputerChoice == "Paper")
     {
-        console.log("That's a tie! Computer picked Paper");
-        console.log("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
+        alert("That's a tie! Computer picked Paper");
+        alert("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
     }
 
     if (getHumanChoice == "Paper" && getComputerChoice == "Scissors")
     {
-        console.log("Computer Scores! Computer picked Scissors");
+        alert("Computer Scores! Computer picked Scissors");
         computerScore += 1;
-        console.log("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
+        alert("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
     }
 
     if (getHumanChoice == "Paper" && getComputerChoice == "Rock")
     {
-        console.log("Human Scores! Computer picked Rock");
+        alert("Human Scores! Computer picked Rock");
         humanScore += 1;
-        console.log("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
+        alert("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
     }
 
     //Scissors
 
     if (getHumanChoice == "Scissors" && getComputerChoice == "Scissors")
     {
-        console.log("That's a tie! Computer picked Scissors");
-        console.log("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
+        alert("That's a tie! Computer picked Scissors");
+        alert("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
     }
 
     if (getHumanChoice == "Scissors" && getComputerChoice == "Rock")
     {
-        console.log("Computer Scores! Computer picked Rock");
+        alert("Computer Scores! Computer picked Rock");
         computerScore += 1;
-        console.log("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
+        alert("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
     }
 
     if (getHumanChoice == "Scissors" && getComputerChoice == "Paper")
     {
-        console.log("Human Scores! Computer picked Paper");
+        alert("Human Scores! Computer picked Paper");
         humanScore += 1;
-        console.log("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
+        alert("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
     }
 
     //Rock
     if (getHumanChoice == "Rock" && getComputerChoice == "Rock")
     {
-        console.log("That's a tie! Computer picked Rock");
-        console.log("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
+        alert("That's a tie! Computer picked Rock");
+        alert("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
     }
 
     if (getHumanChoice == "Rock" && getComputerChoice == "Paper")
     {
-        console.log("Computer Scores! Computer picked Paper}");
+        alert("Computer Scores! Computer picked Paper}");
         computerScore += 1;
-        console.log("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
+        alert("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
     }
 
     if (getHumanChoice == "Rock" && getComputerChoice == "Scissors")
     {
-        console.log("Human Scores! Computer picked Scissors");
+        alert("Human Scores! Computer picked Scissors");
         humanScore += 1;
-        console.log("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
+        alert("The current score is Human: " + humanScore + " " + "Computer: " + computerScore);
     }
 
 }
@@ -138,4 +138,4 @@ function playGame()
 }
 
 //Play Game
-console.log(playGame())
+alert(playGame())
